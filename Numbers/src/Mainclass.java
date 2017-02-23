@@ -6,7 +6,8 @@
 
 /**
  *
- * @author Petri
+ * @Tekijä: Petri Rämö
+ * Pvm: 23.02.2017
  */
 public class Mainclass {
 
