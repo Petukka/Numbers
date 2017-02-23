@@ -13,16 +13,24 @@ public class Converter {
     String[] old;
     String neww;
 
-    
+    /**
+     * This initializes Converter by taking old account number and converting it
+     * 
+     */
     public Converter(String[] help) {
         old = help;
         neww = converter(old);
     }
-    
+    /**
+     * With this you can get the new account number 
+     */
     public String getNew() {
         return neww;
     }
-    
+    /**
+     * This function takes old account number as parameter and checks which of
+     * 2 ways it should be converted. It returns the new account.
+     */
     static String converter(String[] help) {
         String account;
         if (help[0].equals("1") || help[0].equals("2") || help[0].equals("3") || help[0].equals("6") || help[0].equals("8")) {
@@ -37,7 +45,11 @@ public class Converter {
         
         return account;
     }
-    
+    /**
+     *This takes in old account number and converts it. This is the first of two
+     *methods that you can convert old account number. It returns the new account
+     *number
+     */
     static String converting1(String[] help) {
         int i = 0;
         String num = "";
@@ -95,7 +107,11 @@ public class Converter {
         
         return account;
     }
-    
+    /**
+     *This takes in old account number and converts it. This is the secound of two
+     *methods that you can convert old account number. It returns the new account
+     *number
+     */
     static String converting2(String[] help) {
         int i = 0;
         String num = "";

@@ -19,10 +19,11 @@ import java.util.Scanner;
 public class Mainclass {
 
     /**
-     * @param args the command line arguments
+     * Thins function asks old account number and creates object out of Converter.java
+     * which converts old account number to new.
      */
     public static void main(String[] args) throws IOException {
-        System.out.print("Anna tilinumero: ");
+        System.out.print("Anna vanha tilinumero: ");
         Scanner scan = new Scanner(System.in);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String help2;
@@ -40,7 +41,11 @@ public class Mainclass {
         System.out.println(account);
     }
     
-    
+    /**
+     * This function takes given old account number and checks if it's ok
+     * to send to Converter.java
+     *  
+     */
     
     static void error(String[] help) {
         
